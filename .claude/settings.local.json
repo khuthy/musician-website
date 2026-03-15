@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "WebSearch",
+      "WebFetch(domain:open.spotify.com)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
