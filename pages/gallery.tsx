@@ -123,43 +123,48 @@ export default function GalleryPage({ images }: GalleryProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const base = 'https://res.cloudinary.com/dngcmz2ye/image/upload';
   const images: GalleryImage[] = [
-    {
-      id:      '1',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_00.png',
-      alt:     'Mavhungu — official press kit cover portrait 2025',
-      caption: 'Press — Official press photo 2025',
-    },
-    {
-      id:      '2',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_01.png',
-      alt:     'Mavhungu — biography portrait',
-      caption: 'Press — Biography portrait',
-    },
-    {
-      id:      '3',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_02.png',
-      alt:     'Mavhungu — artist about photo with stats',
-      caption: 'Press — About & stats 2025',
-    },
-    {
-      id:      '4',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_03.png',
-      alt:     'Mavhungu — collaborations and released projects',
-      caption: 'Press — Collaborations & released projects',
-    },
-    {
-      id:      '5',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_04.png',
-      alt:     'Mavhungu — live performances and support DJs',
-      caption: 'Live — Traditional dress 2025',
-    },
-    {
-      id:      '6',
-      url:     'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_05.png',
-      alt:     'Mavhungu — bookings and contact',
-      caption: 'Press — Bookings portrait 2025',
-    },
+    // Press kit
+    { id: 'pk1', url: `${base}/mavhungu/mavhungu_presskit_00.png`, alt: 'Mavhungu — official press portrait 2025',      caption: 'Press — Official press photo 2025' },
+    { id: 'pk2', url: `${base}/mavhungu/mavhungu_presskit_01.png`, alt: 'Mavhungu — biography portrait',                caption: 'Press — Biography portrait' },
+    { id: 'pk4', url: `${base}/mavhungu/mavhungu_presskit_03.png`, alt: 'Mavhungu — yellow dress portrait',             caption: 'Press — Yellow dress 2025' },
+    { id: 'pk5', url: `${base}/mavhungu/mavhungu_presskit_04.png`, alt: 'Mavhungu — traditional dress',                 caption: 'Live — Traditional dress 2025' },
+    { id: 'pk6', url: `${base}/mavhungu/mavhungu_presskit_05.png`, alt: 'Mavhungu — bookings portrait',                 caption: 'Press — Bookings portrait 2025' },
+    // Instagram
+    { id: 'ig1',  url: `${base}/mavhungu/instagram/Mavhungu2.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig2',  url: `${base}/mavhungu/instagram/mavhungu3.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig3',  url: `${base}/mavhungu/instagram/mavhungu4.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig4',  url: `${base}/mavhungu/instagram/mavhungu5.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig5',  url: `${base}/mavhungu/instagram/mavhungu6.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig6',  url: `${base}/mavhungu/instagram/mavhungu7.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig7',  url: `${base}/mavhungu/instagram/mavhungu89.jpg`,                                      alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig8',  url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.33.36%20PM.jpg`, alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig9',  url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.37.56%20PM.jpg`, alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig10', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.37.57%20PM%20%281%29.jpg`, alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig11', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.37.57%20PM%20%282%29.jpg`, alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig12', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.37.57%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig13', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.41%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig14', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.44%20PM%20%281%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig15', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.44%20PM%20%282%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig16', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.44%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig17', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.46%20PM%20%281%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig18', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.46%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig19', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.42.15%20PM%20%281%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig20', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.42.15%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig21', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.42.16%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig22', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.09%20PM%20%282%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig23', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.09%20PM%20%283%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig24', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.09%20PM%20%284%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig25', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.09%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig26', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.10%20PM%20%281%29.jpg`, alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig27', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.10%20PM.jpg`,           alt: 'Mavhungu', caption: 'Live' },
+    { id: 'ig28', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.49.47%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig29', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.51.03%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig30', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.57.00%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig31', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2011.03.54%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig32', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2011.03.55%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
+    { id: 'ig33', url: `${base}/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2011.08.49%20PM.jpg`,           alt: 'Mavhungu', caption: 'Personal' },
   ];
 
   return { props: { images }, revalidate: 86400 };
