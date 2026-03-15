@@ -27,3 +27,10 @@ yarn-error.log*
 
 # Vercel
 .vercel
+
+# Press kit assets (already on Cloudinary)
+mavhungu_presskit/
+mavhungu_presskit.pdf
+mavhungu_presskit(1)/
+presskit_img_1.jpg
+instagram_photos/
