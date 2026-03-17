@@ -62,10 +62,10 @@ export default function Footer() {
             <p style={{ marginTop: 'var(--space-md)', fontSize: '0.8rem', color: 'var(--color-text-dim)' }}>
               Bookings &amp; Press:{' '}
               <a
-                href="mailto:mavhungumuenda@gmail.com"
+                href="mailto:support@mavhungu-sa.co.za"
                 style={{ color: 'var(--color-gold)', transition: 'opacity var(--transition-fast)' }}
               >
-                mavhungumuenda@gmail.com
+               support@mavhungu-sa.co.za
               </a>
             </p>
             <p style={{ marginTop: 'var(--space-sm)', fontSize: '0.8rem', color: 'var(--color-text-dim)' }}>
