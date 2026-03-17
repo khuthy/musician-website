@@ -12,7 +12,7 @@ const performances: Performance[] = [
     location: 'Johannesburg, South Africa',
     description:
       'A live television performance on South Africa\'s premier morning show, SABC TV Morning Live, introducing Mavhungu\'s music to a national audience and cementing her reputation as one of the country\'s most compelling live vocalists.',
-    image: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_04.png',
+    image: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.47.09%20PM.jpg',
     highlights: ['National television broadcast', 'Live vocal performance', 'Reached millions of viewers'],
   },
   {
@@ -23,7 +23,7 @@ const performances: Performance[] = [
     location: 'South Africa',
     description:
       'A headline appearance at the celebrated Addicted 2 House event, one of South Africa\'s most respected platforms for Afro House and Afropop talent. Mavhungu\'s set drew a passionate crowd and demonstrated her commanding live presence.',
-    image: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_05.png',
+    image: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu6.jpg',
     highlights: ['Headline appearance', 'Full live vocal set', 'Standing ovation from crowd'],
   },
   {

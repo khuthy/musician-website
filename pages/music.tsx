@@ -14,7 +14,7 @@ const releases = [
     spotifyId: '6exzS5jf17HLYqqQMcJr4J',
     embedType: 'track' as const,
     description: 'A 2024 progressive house collaboration with Lohrasp Kansara and Australian DJ Marcus Santoro, showcasing Mavhungu\'s soulful vocals over cinematic soundscapes.',
-    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_05.png',
+    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu7.jpg',
   },
   {
     id: 'mitodzi',
@@ -24,7 +24,7 @@ const releases = [
     spotifyId: '7ul5qkkmqEyjPAt4g1FsP6',
     embedType: 'track' as const,
     description: 'Produced with Funkky and remixed by UK electronic legend Jimpster, "Mitodzi" resonated with audiences worldwide and brought Mavhungu\'s Venda vocals to European dancefloors.',
-    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_04.png',
+    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.44%20PM.jpg',
   },
   {
     id: 'tshelede',
@@ -34,7 +34,7 @@ const releases = [
     spotifyId: '5OBb7vKydhbz2OwSVT99BW',
     embedType: 'track' as const,
     description: 'A collaboration with South African DJ Vanco and Portuguese DJ DJeff that received significant international radio play, blending deep Afro House with Mavhungu\'s signature vocals.',
-    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_03.png',
+    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu3.jpg',
   },
   {
     id: 'kondelelani',
@@ -44,7 +44,7 @@ const releases = [
     spotifyId: '1qsflyGrjihmYDwEaTcdKz',
     embedType: 'track' as const,
     description: 'One of Mavhungu\'s most celebrated tracks — a collaboration with DJ Vanco that gained international acclaim and was remixed by artists including Mano and Daniel Rateuke.',
-    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_02.png',
+    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/Mavhungu2.jpg',
   },
   {
     id: 'watching-over-africa',
@@ -54,7 +54,7 @@ const releases = [
     spotifyId: '464BYDcWpoLKSNpQxHLuTT',
     embedType: 'artist' as const,
     description: 'Mavhungu\'s debut album — a bold showcase of songs in various African languages that introduced her unique voice and her deep connection to Venda culture to the world.',
-    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_01.png',
+    cover: 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/WhatsApp%20Image%202026-03-15%20at%2010.41.41%20PM.jpg',
   },
 ];
 

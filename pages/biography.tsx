@@ -74,7 +74,7 @@ export default function BiographyPage() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_01.png"
+          src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu3.jpg"
           alt=""
           aria-hidden="true"
           style={{
@@ -138,7 +138,7 @@ export default function BiographyPage() {
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_00.png"
+                    src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu5.jpg"
                     alt="Mavhungu — professional portrait"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
@@ -170,7 +170,7 @@ export default function BiographyPage() {
                     ['Genre',     'Afro-Pop / World Music / Electronic'],
                     ['Active',    '2016 – Present'],
                     ['Phone',     '+27760243926'],
-                    ['Booking',   'mavhungumuenda@gmail.com'],
+                    ['Booking',   'support@mavhungu-sa.co.za'],
                   ].map(([label, value]) => (
                     <div
                       key={label}

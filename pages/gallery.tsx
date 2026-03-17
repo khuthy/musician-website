@@ -24,21 +24,50 @@ export default function GalleryPage({ images }: GalleryProps) {
       title="Gallery — Mavhungu"
       description="Official photo gallery of Mavhungu — press photos and artist images."
     >
-      {/* Page header */}
+      {/* Cinematic page hero */}
       <div
         style={{
-          paddingTop: 'calc(var(--nav-height) + var(--space-3xl))',
-          paddingBottom: 'var(--space-2xl)',
-          textAlign: 'center',
-          borderBottom: '1px solid var(--color-border)',
+          position: 'relative',
+          height: '50vh',
+          minHeight: '340px',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <div className="container">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <span className="section-label">Photo Gallery</span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu7.jpg"
+          alt=""
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center 15%',
+            filter: 'brightness(0.28)',
+          }}
+        />
+        <div
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'linear-gradient(to bottom, rgba(8,8,8,0.5) 0%, transparent 40%, rgba(8,8,8,0.95) 100%)',
+          }}
+        />
+        <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <span className="section-label" style={{ marginBottom: 'var(--space-md)', display: 'inline-block' }}>
+              Photo Gallery
+            </span>
             <h1 style={{ marginBottom: 'var(--space-md)' }}>Gallery</h1>
-            <p className="section-subtitle">
-              Press photos, live performance captures, and studio sessions. Click any image to enlarge.
+            <p className="section-subtitle" style={{ maxWidth: '480px', margin: '0 auto' }}>
+              Press photos, live performances &amp; studio sessions
             </p>
           </motion.div>
         </div>
@@ -47,40 +76,55 @@ export default function GalleryPage({ images }: GalleryProps) {
       <section className="section" aria-label="Photo gallery">
         <div className="container">
           {/* Category filter */}
-          <div
-            role="group"
-            aria-label="Filter gallery by category"
-            style={{ display: 'flex', gap: 'var(--space-sm)', marginBottom: 'var(--space-2xl)', flexWrap: 'wrap' }}
-          >
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                aria-pressed={activeCategory === cat}
-                style={{
-                  padding: '0.5rem 1.25rem',
-                  borderRadius: 'var(--radius-full)',
-                  fontSize: '0.85rem',
-                  fontWeight: 600,
-                  border: '1px solid',
-                  transition: 'all var(--transition-fast)',
-                  borderColor: activeCategory === cat ? 'var(--color-gold)' : 'var(--color-border)',
-                  background:  activeCategory === cat ? 'var(--color-gold-dim)' : 'transparent',
-                  color:       activeCategory === cat ? 'var(--color-gold)'     : 'var(--color-text-muted)',
-                }}
-              >
-                {cat}
-              </button>
-            ))}
+          <div style={{ textAlign: 'center', marginBottom: 'var(--space-2xl)' }}>
+            <div
+              role="group"
+              aria-label="Filter gallery by category"
+              style={{
+                display: 'inline-flex',
+                gap: 'var(--space-xs)',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                background: 'var(--color-bg-card)',
+                border: '1px solid var(--color-border)',
+                borderRadius: 'var(--radius-full)',
+                padding: '0.35rem',
+              }}
+            >
+              {categories.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  aria-pressed={activeCategory === cat}
+                  style={{
+                    padding: '0.45rem 1.3rem',
+                    borderRadius: 'var(--radius-full)',
+                    fontSize: '0.82rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.04em',
+                    border: 'none',
+                    transition: 'all var(--transition-base)',
+                    background:  activeCategory === cat ? 'var(--color-gold)' : 'transparent',
+                    color:       activeCategory === cat ? '#080808'           : 'var(--color-text-muted)',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+            <p
+              style={{
+                marginTop: 'var(--space-md)',
+                fontSize: '0.8rem',
+                color: 'var(--color-text-dim)',
+                letterSpacing: '0.06em',
+              }}
+              aria-live="polite"
+            >
+              {filtered.length} photo{filtered.length !== 1 ? 's' : ''}
+            </p>
           </div>
-
-          {/* Count */}
-          <p
-            style={{ fontSize: '0.85rem', color: 'var(--color-text-dim)', marginBottom: 'var(--space-xl)' }}
-            aria-live="polite"
-          >
-            {filtered.length} photo{filtered.length !== 1 ? 's' : ''}
-          </p>
 
           <GalleryLightbox images={filtered} />
 
@@ -125,13 +169,6 @@ export default function GalleryPage({ images }: GalleryProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const base = 'https://res.cloudinary.com/dngcmz2ye/image/upload';
   const images: GalleryImage[] = [
-    // Press kit
-    { id: 'pk1', url: `${base}/mavhungu/mavhungu_presskit_00.png`, alt: 'Mavhungu — official press portrait 2025',      caption: 'Press — Official press photo 2025' },
-    { id: 'pk2', url: `${base}/mavhungu/mavhungu_presskit_01.png`, alt: 'Mavhungu — biography portrait',                caption: 'Press — Biography portrait' },
-    { id: 'pk4', url: `${base}/mavhungu/mavhungu_presskit_03.png`, alt: 'Mavhungu — yellow dress portrait',             caption: 'Press — Yellow dress 2025' },
-    { id: 'pk5', url: `${base}/mavhungu/mavhungu_presskit_04.png`, alt: 'Mavhungu — traditional dress',                 caption: 'Live — Traditional dress 2025' },
-    { id: 'pk6', url: `${base}/mavhungu/mavhungu_presskit_05.png`, alt: 'Mavhungu — bookings portrait',                 caption: 'Press — Bookings portrait 2025' },
-    // Instagram
     { id: 'ig1',  url: `${base}/mavhungu/instagram/Mavhungu2.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
     { id: 'ig2',  url: `${base}/mavhungu/instagram/mavhungu3.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },
     { id: 'ig3',  url: `${base}/mavhungu/instagram/mavhungu4.jpg`,                                       alt: 'Mavhungu', caption: 'Personal' },

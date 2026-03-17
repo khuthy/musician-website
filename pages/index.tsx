@@ -121,7 +121,7 @@ export default function Home({ upcomingEvents }: HomeProps) {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_02.png"
+                  src="https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu4.jpg"
                   alt="Mavhungu — artist photo"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />

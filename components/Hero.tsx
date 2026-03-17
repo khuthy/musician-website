@@ -29,7 +29,7 @@ export default function Hero() {
           position: 'absolute',
           inset: 0,
           backgroundImage:
-            'url(https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_00.png)',
+            'url(https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu6.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 30%',
           filter: 'brightness(0.35)',

@@ -14,9 +14,9 @@ export default function Layout({
   children,
   title = 'Mavhungu — Where Venda Meets the World',
   description = 'Official website of Mavhungu — South African Afro-Pop singer and songwriter from Limpopo\'s Venda region. Music, events, and more.',
-  ogImage = 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/mavhungu_presskit_00.png',
+  ogImage = 'https://res.cloudinary.com/dngcmz2ye/image/upload/mavhungu/instagram/mavhungu5.jpg',
 }: LayoutProps) {
-  const siteUrl = 'https://mavhungu.com';
+  const siteUrl = 'https://mavhungu-sa.co.za';
 
   return (
     <>

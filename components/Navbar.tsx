@@ -52,20 +52,23 @@ export default function Navbar() {
       >
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Logo */}
-          <Link
-            href="/"
-            aria-label="Mavhungu — home"
-            style={{
+          <Link href="/" aria-label="Mavhungu — home"
+          style={{
+              display: 'flex', alignItems: 'center',
               fontFamily: 'var(--font-heading)',
-              fontSize: '1.4rem',
-              fontWeight: 700,
-              letterSpacing: '0.05em',
-              background: 'linear-gradient(135deg, var(--color-gold), var(--color-gold-light))',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
-          >
+                            fontSize: '1.4rem',
+                            fontWeight: 700,
+                            letterSpacing: '0.05em',
+                            background: 'linear-gradient(135deg, var(--color-gold), var(--color-gold-light))',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            backgroundClip: 'text',
+              }}>
+            <img
+              src="https://res.cloudinary.com/dngcmz2ye/image/upload/v1773767843/mavhungu/logo-mm.svg"
+              alt="Mavhungu"
+              style={{ height: '48px', width: 'auto' }}
+            />
             MAVHUNGU
           </Link>
 
